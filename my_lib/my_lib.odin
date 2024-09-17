@@ -7,6 +7,14 @@ when ODIN_OS == .Windows {
 	foreign import my_lib {
 		"windows/my_lib.lib",
 	}
+} else when ODIN_OS == .Linux {
+	foreign import my_lib {
+		"linux/my_lib.a",
+	}
+} else when ODIN_OS == .Darwin {
+	foreign import my_lib {
+		"macos/my_lib.a",
+	}
 }
 
 Callback :: proc "c"(TestStruct)
