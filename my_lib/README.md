@@ -10,11 +10,7 @@ lib my_lib.obj
 ```
 cl my_lib.c /LD
 ```
-In that case you also need to add
+The `__declspec(dllexport)` in front off the functions in `my_lib.c` are only needed if you are going to compile as dynamic library:
 ```
-__declspec(dllexport) 
-```
-in front off the functions in `my_lib.c`, i.e:
-```
-__declspec(dllexport) void set_callback(Callback c)
+__declspec(dllexport) void set_callback(Callback c) { ...
 ```
