@@ -1,0 +1,40 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+		},
+		{
+			"path": "C:\\Odin\\base",
+		},
+		{
+			"path": "C:\\Odin\\core",
+		},
+		{
+			"path": "C:\\Odin\\vendor\\raylib",
+		},
+		{
+			"path": "C:\\Odin\\examples\\demo"
+		},
+	],
+	"build_systems":
+	[
+		{
+			"working_dir": "$project_path",
+			"name": "sublime_odin_template",
+			"cmd": "odin run .",
+			"file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$",
+		}
+	],
+	"settings":
+	{
+		"auto_complete": false,
+		"LSP":
+		{
+			"odin":
+			{
+				"enabled": true,
+			},
+		},
+	},
+}
