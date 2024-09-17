@@ -1,3 +1,5 @@
 *.obj
 *.exp
 *.lib
+*.exe
+*.sublime-workspace
